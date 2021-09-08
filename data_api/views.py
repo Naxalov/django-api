@@ -1,4 +1,5 @@
 from django.http import HttpResponse
+from django.http import JsonResponse
 
 def get_data(request):
-    return HttpResponse("get_data page")
+    return JsonResponse({"data":7})
