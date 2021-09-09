@@ -1,3 +1,9 @@
 from django.shortcuts import render
-# new app
-# Create your views here.
+from django.http import JsonResponse
+
+def first(request):
+    return JsonResponse({"data":7})
+    
+def home(request):
+    print(request)
+    return JsonResponse({"data":7})
